@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="4.0.4-HC" version="1.0">
+  This file is intended to be loaded by Logisim-evolution (https://github.com/kevinawalsh/logisim-evolution).
+
+  <lib desc="#Base" name="0">
+    <tool name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="text" val=""/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <lib desc="#Wiring" name="1"/>
+  <lib desc="#Gates" name="2"/>
+  <lib desc="#Plexers" name="3">
+    <tool name="Multiplexer">
+      <a name="enable" val="false"/>
+    </tool>
+    <tool name="Demultiplexer">
+      <a name="enable" val="false"/>
+    </tool>
+  </lib>
+  <lib desc="#Arithmetic" name="4"/>
+  <lib desc="#Memory" name="5">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#Analog" name="7"/>
+  <lib desc="#BFH-Praktika" name="8"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="0" map="Button2" name="Menu Tool"/>
+    <tool lib="0" map="Button3" name="Menu Tool"/>
+    <tool lib="0" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="0" name="Poke Tool"/>
+    <tool lib="0" name="Edit Tool"/>
+    <tool lib="0" name="Wiring Tool"/>
+    <tool lib="0" name="Cutter Tool"/>
+    <tool lib="0" name="Text Tool">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="text" val=""/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="Pin"/>
+    <tool lib="1" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="labelloc" val="east"/>
+      <a name="type" val="output"/>
+    </tool>
+    <tool lib="2" name="NOT Gate"/>
+    <tool lib="2" name="AND Gate"/>
+    <tool lib="2" name="OR Gate"/>
+    <tool lib="2" name="XOR Gate"/>
+    <tool lib="2" name="NAND Gate"/>
+    <tool lib="2" name="NOR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="classic"/>
+    <comp lib="0" loc="(165,177)" name="Text">
+      <a name="text" val="X0"/>
+    </comp>
+    <comp lib="0" loc="(173,362)" name="Text">
+      <a name="text" val="X1"/>
+    </comp>
+    <comp lib="1" loc="(210,180)" name="Pin"/>
+    <comp lib="1" loc="(210,360)" name="Pin"/>
+    <comp lib="1" loc="(590,270)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="labelloc" val="east"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="2" loc="(290,370)" name="NAND Gate"/>
+    <comp lib="2" loc="(310,210)" name="NAND Gate"/>
+    <comp lib="2" loc="(430,240)" name="NAND Gate"/>
+    <comp lib="2" loc="(430,340)" name="NAND Gate"/>
+    <comp lib="2" loc="(560,270)" name="NAND Gate"/>
+    <wire from="(210,180)" to="(210,210)"/>
+    <wire from="(210,210)" to="(220,210)"/>
+    <wire from="(210,360)" to="(220,360)"/>
+    <wire from="(220,210)" to="(220,250)"/>
+    <wire from="(220,210)" to="(240,210)"/>
+    <wire from="(220,250)" to="(330,250)"/>
+    <wire from="(220,320)" to="(220,350)"/>
+    <wire from="(220,320)" to="(370,320)"/>
+    <wire from="(220,350)" to="(220,360)"/>
+    <wire from="(220,350)" to="(230,350)"/>
+    <wire from="(220,360)" to="(220,390)"/>
+    <wire from="(220,390)" to="(230,390)"/>
+    <wire from="(240,190)" to="(240,210)"/>
+    <wire from="(240,190)" to="(250,190)"/>
+    <wire from="(240,210)" to="(240,230)"/>
+    <wire from="(240,230)" to="(250,230)"/>
+    <wire from="(290,370)" to="(350,370)"/>
+    <wire from="(310,210)" to="(310,360)"/>
+    <wire from="(310,360)" to="(370,360)"/>
+    <wire from="(330,220)" to="(330,250)"/>
+    <wire from="(330,220)" to="(370,220)"/>
+    <wire from="(350,260)" to="(350,370)"/>
+    <wire from="(350,260)" to="(370,260)"/>
+    <wire from="(430,240)" to="(470,240)"/>
+    <wire from="(430,340)" to="(470,340)"/>
+    <wire from="(470,240)" to="(470,250)"/>
+    <wire from="(470,250)" to="(500,250)"/>
+    <wire from="(470,290)" to="(470,340)"/>
+    <wire from="(470,290)" to="(500,290)"/>
+    <wire from="(560,270)" to="(590,270)"/>
+  </circuit>
+</project>
